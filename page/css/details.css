@@ -1,0 +1,125 @@
+*{margin:0;padding:0;}
+.headmessage{
+    width:100%;height:300px;
+    background-color: #f5f5f6;
+}
+.headmessage .menuClear{
+    width:100%;height:45px;
+    margin-left:350px;
+}
+.headmessage .menuClear .menuLeft a{
+    text-decoration:none;
+    font-size:1.5em;
+    color:#00f;
+    font-weight: 400;
+}
+.headmessage .menuClear .search{
+    float:right;
+    width:345px;height:45.5px;
+    background-color:#ebeced;
+    line-height: 45.5px; 
+    margin-right: 700px; 
+}
+.headmessage .menuClear .search span{
+    display:inline-block;
+    color: #101d37;
+    font-size:0.9em;
+    font-weight: 600;
+    margin-left:10px;
+    cursor: pointer;
+}
+.headmessage .menuClear .search input{
+    border:0px;
+    outline: none;
+    height:90%;
+    background-color:#ebeced;
+    margin-left:50px;
+}
+.headmessage .content{
+    margin-top:50px;
+}
+.headmessage .titleLeft{
+    float:left;
+    margin-left:350px;
+}
+.headmessage .titleLeft h1{
+    font-size:1.5em;
+    color: #101d37;
+    font-weight: 700;
+}
+.headmessage .content .titleLeft span{
+    display:inline-block;
+    margin-top:10px;
+    color:#aaa;
+}
+.headmessage .content .action{
+    float:right;
+    width:115px;height:68px;
+    margin-right:350px;
+    text-align:center;
+}
+.headmessage .action button{
+    border:1px solid #aaa;
+    line-height:45px;
+    width:100%;
+    outline:none;
+    background-color:#fff;
+}
+.headmessage .action p{
+    font-size:0.6em;
+    color:#aaa;
+    margin-top:5px;
+}
+#container{
+    width:1200px;
+    margin:0 auto;
+    border:1px solid #000;
+    position: relative;
+}
+#container ul{
+    list-style:none;
+}
+#container ul li{
+    float:left;
+    color:#aaa;
+    font-size:0.8em; 
+    margin-left:10px;
+    margin-top:30px;
+}
+#container ul li a{
+    text-decoration:none;
+    color:#aaa;
+}
+#container .view {
+    position: relative;
+    margin-top:70px;
+}
+#container .view .descImg a img{
+    width:710px;height:400px;
+}
+#container .view .descImg .pre,#container .view .descImg .next{
+    display:inline-block;
+    width:30px;height:82px;
+    background-color:#000;
+    line-height: 82px;
+    text-align: center;
+    font-size: 1.2em;
+    color: #cac9c9;
+    opacity: .8;
+}
+#container .view .descImg .descSmall{
+    display:flex;
+}
+#container .view .descImg .descSmall ul{
+   margin-top:-30px;
+   margin-left:-5px;
+   margin-right:5px;
+}
+#container .view .descImg .descSmall ul li a img{
+    width:120px;height:82px;
+}
+#container .content{
+    
+}
+
+
