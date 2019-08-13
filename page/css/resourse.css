@@ -201,7 +201,7 @@ img.pho{
 	font-weight:700;
 }
 /*code*/
-
+/*
 [data-component=dealCard] .hd .btn-qrcode {
 	width:18px;
 	height:18px;
@@ -217,7 +217,7 @@ img.pho{
 	cursor:pointer;
 }
 [data-component=dealCard] .hd .icon-qrcode{
-/*	display:none;*/
+	display:none;
 	background-image:url(/imgs/getDownloadQr.png);
 	background-position:0 0;
 	width:196px;
@@ -250,7 +250,7 @@ img.pho{
 	font-size:12px;
 	color:#9399a5;
 }
-
+*/
 /*bottom*/
 div.relatedhouse{
 	width:340px;
