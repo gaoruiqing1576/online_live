@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-    <link rel="stylesheet" href="resourse.css">
+    <link rel="stylesheet" href="css/resourse.css">
 </head>
 <body>
     <div class="g-main">
@@ -34,17 +34,148 @@
                             </div>
                         </dd>
                     </dl>
+                    <dl>
+                        <dt>房屋地址</dt>
+                        <dd>
+                            <div class="u-select u-select-build">
+                                <input type="text" placeholder="楼栋号" class="u-select-selected">
+                            </div>
+                            <div class="u-select u-select-build">
+                                    <input type="text" placeholder="单元号" class="u-select-selected">
+                            </div>
+                            <div class="u-select u-select-build">
+                                <input type="text" placeholder="门牌号" class="u-select-selected">
+                            </div>
+                        </dd>
+                    </dl>
+										<dl>
+											<dt>期望售价</dt>
+											<dd>
+												<input type="text" name="expect_price" placeholder="请输入您期望卖出的价格" class="price">
+												<div class="unit">万元</div>
+												<a href="#" class="link-gujia">不太清楚如何定价? 先估个价</a>
+											</dd>
+										</dl>
+										<dl>
+											<dt>称呼</dt>
+											<dd>
+												<input type="text" name="user_name" placeholder="我们应该如何称呼您" class="uname">
+											</dd>
+										</dl>
+										<dl>
+											<dt>手机号码</dt>
+											<dd>
+												<input type="text" name="user_mobile" placeholder="您的联系方式，方便我们及时与您联系" class="con">
+											</dd>
+										</dl>
+										<dl>
+											<dt>图形验证码</dt>
+											<dd>
+												<input type="text" name="verify_code" placeholder="请输入图形验证码中的结果" class="verify">
+												<div class="btn-getcode-sms">
+													<img src="imgs/GeneratePictureUpgrade.png" alt="" class="pho">
+												</div>
+											</dd>
+										</dl>
                 </div>
                 <!-- right -->
-                <div class="box-r m-deal">
-
+                <div class="box-r m-deal" data-component="dealCard">
+								<!--top-->
+									<div class="hd">
+										<!-- price -->
+										<div class="dealprice">
+											<div class="tit">西安市 成交均价</div>
+											<div class="sub-tit">
+												<span class="num">12903</span>
+												<span class="unit">元/㎡</span>
+											</div>
+										</div>
+										<!--code  -->
+										<!--<div class="btn-qrcode">
+											<div class="icon-qrcode"></div>
+											<div class="layer-qrcode">
+												<div class="icon-qrcode">
+													<img src="imgs/getDownloadQr.png">
+												</div>
+												<div class="txt">去贝壳找房APP提升卖房速度</div>
+												<div class="sub-txt">APP·移动卖房新体验</div>
+											</div>
+										</div>-->
+									</div>
+								<!-- bottom -->
+									<div class="relatedhouse">
+										<!--top -->
+										<ul class="bd">
+											<li>
+												<a href="#" class="tit" target="_blank">公园天下 - 2室2厅/111.15平米</a>
+												<span class="time">签约时间 2019-07-27</span>
+												<span class="num">215万</span>
+											</li>
+											<li>
+												<a href="#" class="tit" target="_blank">公园天下 - 2室2厅/111.15平米</a>
+												<span class="time">签约时间 2019-07-27</span>
+												<span class="num">215万</span>
+											</li>
+											<li>
+												<a href="#" class="tit" target="_blank">公园天下 - 2室2厅/111.15平米</a>
+												<span class="time">签约时间 2019-07-27</span>
+												<span class="num">215万</span>
+											</li>
+										</ul>
+										<!--more -->
+										<div class="ft">
+											<a href="#" target="_blank">查看更多成交明细</a>
+										</div>
+									</div>
                 </div>
             </div>
-            <div class="m-submit"></div>
+            <div class="m-submit">
+							<div class="btn-submit">提交委托</div>
+						</div>
         </div>
         <!-- bottom -->
-        <div class="m-process"></div>
-        <div class="m-gujia"></div>
+        <div class="m-process">
+					<div class="hd">卖房全流程</div>
+					<ul class="bd">
+						<li>
+						<span class="icon icon-1">1</span>
+							<div class="tit">发布房源</div>
+							<div class="sub-tit">在线上免费发布房源</div>
+						</li>
+						<li>
+							<span class="icon icon-2">2</span>
+							<div class="tit">核对房源</div>
+							<div class="sub-tit">30分钟内客服联系</div>
+						</li>
+						<li>
+							<span class="icon icon-3">3</span>
+							<div class="tit">在线销售</div>
+							<div class="sub-tit">在贝壳APP移动管理销售</div>
+						</li>
+						<li>
+							<span class="icon icon-4">4</span>
+							<div class="tit">签约出售</div>
+							<div class="sub-tit">签约过户全程专业服务</div>
+						</li>
+					</ul>
+				</div>
+			<!--gujia-->
+        <div class="m-gujia">
+					<div class="wrap">
+						<div class="text">
+							<div class="tit">不知道如何定价？</div>
+							<div class="sub-tit">专业房屋估值，为您提供卖房买房价格参考</div>
+						</div>
+						<a href="#" class="btn-gujia">
+							<span class="mark"></span>
+							<span class="icon-money">
+								<img src="imgs/money.jpg" alt="">
+							</span>
+							<span class="txt">看看您的房子值多少钱？</span>
+							<span class="icon-gujia">马上去估价</span>
+						</a>
+					</div>
+				</div>
     </div>
 </body>
 </html>
