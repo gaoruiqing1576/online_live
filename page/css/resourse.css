@@ -1,0 +1,104 @@
+.g-main{
+    width:1903px;
+    height:1264px;
+    color:#101d37;
+    box-sizing:border-box;
+}
+.g-main .m-jumbotron{
+    width:1903px;
+    height: 134px;
+    text-align: center;
+    background-color: #f5f5f6;
+}
+.g-main .m-jumbotron .title{
+    font-weight:700;
+    color:#101d37;
+    font-size:33px;
+}
+.g-main .m-jumbotron .subtitle{
+    margin-top:15px;
+    color:#878787;
+    font-size:16px;
+}
+.g-main .m-form{
+    width:990px;
+    height:555px;
+    margin:0 auto;
+    margin-top:55px;
+}
+.g-main .m-form .form-box{
+    width:990PX;
+    height:440px;
+}
+.g-main .m-form .form-box .box-l{
+    border:1px solid #f00;
+    width:590px;
+    height:430.5px;
+    float:left;
+}
+.g-main .m-form .form-box .box-r{
+    border:2px solid #ff0;
+    width:340px;
+    height:395px;
+    float:right;
+}
+/* 小区所在城市 */
+.m-form .form-box .box-l dl.compact{
+    padding:0px;
+    padding-bottom:25px;
+    line-height:1;
+}
+.m-form .form-box .box-l dl.compact dt{
+    float:left;
+    color:#101d37;
+    font-weight:700;
+    width:120px;
+    font-size:14px;
+}
+.m-form .form-box .box-l dl.compact .city-select{
+    width:270px;
+    display:block;
+    cursor:pointer;
+}
+.m-form .form-box .box-l dl.compact .city-select>div{
+    float:left;
+    font-size:14px;
+}
+.m-form .form-box .box-l dl.compact .city-select .link-btn{
+    margin-left:60px;
+    color:#3072f6;
+}
+/* 小区 */
+/*
+.m-form .form-box .box-l dl{
+    padding:12px 0;
+    line-height:40px;
+    border-bottom:1px solid #eee;
+}
+.m-form .form-box .box-l dt{
+    float:left;
+    color:#101d37;
+    font-weight:700;
+    width:120px;
+    font-size:14px;
+}
+.m-form .form-box .box-l dd{
+    position:relative;
+    float:left;
+    width:470px;
+}
+.m-form .form-box .box-l dd div{
+    position:relative;
+    width:100%;
+}
+.m-form .form-box .box-l input.sugInput{
+    width:100%;
+}
+.m-form .form-box .box-l input{
+    border:none;
+    height:40px;
+    line-height:20px;
+    padding:10px 0;
+}
+*/
+
