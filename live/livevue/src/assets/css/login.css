@@ -1,0 +1,164 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.login{
+    width:1180px;
+    height: 850px;
+    border: #62ab00 solid 4px;
+   
+    position: relative;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+/*背景图样式*/
+.login>.background{
+    width: 100%;
+    height: 100%;
+
+    position:absolute;
+    z-index: -99;
+    opacity:0.1;
+    margin:0 auto;
+}
+/*logo样式*/
+.logo{
+    width:100%;
+    height:100%;
+ 
+}
+/*登录页面样式和注册页面样式*/
+.login>.loginBox{
+    position:absolute;
+    right:400px;
+    top: 180px;
+   margin:0 auto;
+}
+
+/*返回首页按钮样式*/
+.login>.loginBox>.homepageBtn{
+    position:absolute;
+   color:#333;
+    bottom: -80px;
+}
+
+
+
+.login>.register{
+    position:absolute;
+    right:400px;
+    top:50px;
+    display:none;
+}
+.login>.loginBox>h1,.login>.register>h1{
+    text-align: center;
+    color:#f60;
+    font: 42px "汉仪太极体简";
+    margin-bottom: 50px;
+}
+.login>.loginBox>p,.login>.register>p{
+    color:#f60;
+    font: 18px "汉仪太极体简";
+    margin-top: 20px;
+    margin-bottom:10px;
+    margin-left:10px;
+}
+.login>.loginBox>input,.login>.register>input{
+    outline: none;
+    border: #f60 solid 1px;
+    height: 30px;
+    width: 360px;
+    
+}
+.login>.loginBox>.btnBox,.login>.register>.btnBox{
+    position: relative;
+}
+.login>.loginBox>.btnBox>a.homepageBtn{
+    color:#f60;
+}
+.login>.loginBox>.btnBox>.loginBtn,.login>.register>.btnBox>.registerBtn{
+    position:absolute;
+    top: 0;
+    left:30%;
+    width:140px;
+    color:#333;
+    font: 24px "汉仪太极体简";
+    background:#f60 ;
+    border: #f60 solid 2px;
+    border-radius:20px;
+    outline:none
+}
+.login>.loginBox>.btnBox>.loginBtn:hover,.login>.register>.btnBox.loginBtn:hover{
+    background:#f60;
+    color:#333;
+}
+.login>.loginBox>.btnBox>a,.login>.register>.btnBox>a{
+    display:block;
+    position:absolute;
+    top:13px;
+    right:20px;
+    margin-left: 20px;
+    text-decoration: none;
+    color:#f60;
+    font: 16px "汉仪太极体简";
+}
+.login>.loginBox>.btnBox>a:hover,.login>.register>.btnBox>a:hover{
+    color:#f00;
+}
+.login>.loginBox>.btnBox>.loginBtn,.login>.loginBox>.btnBox>a{
+    margin-top: 50px;
+}
+.login>.register>.btnBox>.registerBtn,.login>.register>.btnBox>a{
+    margin-top: 30px;
+}
+.show{
+    color: #000000;
+    font: 12px "汉仪太极体简";
+    margin-top: 5px;
+    margin-left:10px;
+}
+.gender>span{
+    float: left;
+    margin-left: 90px;
+    margin-top:-38px;
+    color: #f60;
+    font: 16px "汉仪太极体简";
+}
+.gender>span.s2{
+    padding-left:80px;
+}
+/*返回结果*/
+#loginShow{
+    display: none;
+    width:540px;
+    height: 140px;
+    position: fixed;
+    top: 55%;
+    left: 35%;
+    border: #f60 solid 4px;
+    border-radius:20px;
+    text-align: center;
+    background:#f60 ;
+}
+#loginShow>p{
+    margin-top:45px;
+    color: #fff;
+    font: 24px "汉仪太极体简";
+}
+#loginShow>.showBtn{
+    position:absolute;
+    bottom: 10px;
+    left: 42%;
+    width: 120px;
+    height: 28px;
+    color:#f60;
+    font: 16px "汉仪太极体简";
+    background:#fff ;
+    border: #f60 solid 2px;
+    border-radius:20px;
+    outline:none
+}
+#loginShow>.showBtn:hover{
+    color:#333;
+    background:#f00;
+}

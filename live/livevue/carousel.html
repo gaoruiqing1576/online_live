@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+      *{margin:0px;padding:0px;box-sizing: border-box;}
+      #carousel{
+        width:200px;
+        height:200px;
+        position:relative;
+        overflow: hidden;
+        margin:0 auto;
+      }
+      #btn-left{
+        width:20px;
+        height:30px;
+        position: absolute;
+        top:40%;
+        left:0px;
+        background-image: url(public/img/background/l_r_3.png);
+        background-repeat: no-repeat;
+        background-position:0px -50px;
+        cursor: pointer;
+        display: none;
+      }
+      #btn-right{
+        width:20px;
+        height:30px;
+        position: absolute;
+        top:40%;
+        right:0px;
+        background-image: url(public/img/background/l_r_3.png);
+        background-repeat: no-repeat;
+        background-position:0px 0px;
+        cursor: pointer;
+        display: none;
+      }
+      #carousel:hover #btn-left{
+        display: block;
+      }
+      #carousel:hover #btn-right{
+        display: block;
+      }
+      #btn-left:hover{
+        display: block;
+        background-image: url(public/img/background/l_r_3.png);
+        background-position:0px -100px;
+      }
+      #btn-right:hover{
+        display: block;
+        background-image: url(public/img/background/l_r_3.png);
+        background-position:0px -150px;
+      }
+      #carousel ul#ul-imgs{
+        width:200px;
+        height:200px;
+        list-style: none;
+      }
+      #carousel ul#ul-imgs li{
+        width:200px;
+        float: left;
+      }
+      #carousel ul#ul-imgs li div.title{
+        width:200px;
+        height:0px;
+        background:#f46520;
+        color:#fff;
+        font-size: 18px;
+        font-family:微软雅黑;
+        line-height: 28px;
+        text-align: center;
+        position: absolute;
+        bottom:0px;
+        left:0px;
+        transition: all .5s linear;
+      }
+      #carousel:hover ul#ul-imgs li div.title{
+          height:30px;
+      }
+      #carousel ul#ul-imgs li div.subtitle{
+        width:40px;
+        height:40px;
+        background:#f46520;
+        color:#fff;
+        font-size: 25px;
+        font-family:微软雅黑;
+        line-height: 33px;
+        text-align: center;
+        border-radius: 0 0 0 30px;
+        position: absolute;
+        top:0px;
+        right:0px;
+        opacity:0;
+        transition: all .5s linear;
+      }
+      #carousel:hover ul#ul-imgs li div.subtitle{
+        opacity: 1;
+      }
+    </style>
+</head>
+<body>
+    <div id="carousel">
+        <div id="btn-left"></div>
+        <ul id="ul-imgs" style="width:1000px; margin-left:0px;">
+          <li>
+            <a href="javascript:;">
+              <div class="subtitle">58</div>
+              <img src="public/img/carousel/01.jpg">
+              <div class="title">可爱萌宠,带回家</div>
+            </a>
+          </li>
+          <li>
+            <a href="javascript:;">
+                <div class="subtitle">58</div>
+              <img src="public/img/carousel/02.jpg">
+              <div class="title">可爱萌宠,带回家</div>
+            </a>
+          </li>
+          <li>
+            <a href="javascript:;">
+                <div class="subtitle">58</div>
+              <img src="public/img/carousel/03.jpg">
+              <div class="title">可爱萌宠,带回家</div>
+            </a>
+          </li>
+          <li>
+            <a href="javascript:;">
+                <div class="subtitle">58</div>
+              <img src="public/img/carousel/04.jpg">
+              <div class="title">可爱萌宠,带回家</div>
+            </a>
+          </li>
+          <!--注意！最后li个数要比实际图片张数多1，最后一个li里的img是重复第一张li的图片-->
+          <li>
+              <a href="javascript:;">
+                  <div class="subtitle">58</div>
+                <img src="public/img/carousel/01.jpg">
+                <div class="title">可爱萌宠,带回家</div>
+              </a>
+          </li>
+        </ul>
+        <div id="btn-right"></div>
+    </div>
+    
+</body>
+</html>
