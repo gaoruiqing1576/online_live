@@ -14,6 +14,7 @@ CREATE TABLE live_user(
    user_name VARCHAR(32),  #用户真实姓名
    gender BOOL
 );
+INSERT into live_user VALUES(NULL,"dingding","123456","18292880347","","丁丁",1);
 
 /**2.创建首页轮播图表**/
 CREATE TABLE live_carousel(

@@ -146,12 +146,13 @@
                                 <p class="tags"><span v-text="pro.tags.substr(0,4)">环境优雅</span><span v-text="pro.tags.substr(5,4)">品质小区</span><span v-text="pro.tags.substr(10,4)">环境优美</span></p>
                                 <div class="detail_bottom">
                                     <p><span>安选</span><span>真实在售</span></p>
-                                    <p class="price"><span>{{pro.sprice}}万</span><span v-text="pro.aprice">(23523/m²)</span></p>
+                                    <p class="landlord"><span>发布人</span>:{{pro.landlord}}</p>
+                                    <p class="price"><span>{{pro.sprice}}万</span><span>{{pro.aprice}}元/m²</span></p>
                                 </div>	
                             </div>
                         </router-link>
                     </div>
-                    <div class="page">
+                    <div class="page" v-show="!like">
                         <ul>
                             <li :class="{disabled:pno==0}"><a href="javascript:;" @click="goto(-1)">上一页</a></li>
                             <li v-for="(n,i) of pageCount" :key="i" :class="{active:i==pno}"><a href="javascript:;" @click="page(i)">{{n}}</a></li>
@@ -168,6 +169,34 @@
                             <input type="text" value="1">
                             <input type="button" value="跳转">
                         </div>-->
+                    </div>
+                    <div class="like" :class="{on:like}">
+                        <div class="nofond">没有找到相关的房源</div>
+                        <h1>猜你喜欢</h1>
+                        <div class="detail">
+                            <router-link :to="href">
+                                <img src="img/index/wy/01.jpg" alt="">
+                                <div class="detail_right">
+                                    <h4 class="title">龙首原地铁口 地段好 城市新苑 两室两厅 户型方正 满三满二</h4>
+                                    <p class="subtitle">
+                                        <span>二室二厅</span>
+                                        <b> | </b>
+                                        <span>89m²</span>
+                                        <b> | </b>
+                                        <span>低层(共23层)</span>
+                                        <b> | </b>
+                                        <span>2009年建造</span>
+                                    </p>
+                                    <p class="address">城市雅苑 未央-北二环西段-二环北路西段49号</p>
+                                    <p class="tags"><span>环境优雅</span><span>品质小区</span><span>环境优美</span></p>
+                                    <div class="detail_bottom">
+                                        <p><span>安选</span><span>真实在售</span></p>
+                                        <p class="landlord"><span>发布人</span>:孙召</p>
+                                        <p class="price"><span>95万</span><span>(10623/m²)</span></p>
+                                    </div>	
+                                </div>
+                            </router-link>
+                        </div>
                     </div>
                 </div>
                 <div class="sale_right">
@@ -263,6 +292,8 @@ import recommend from "../components/Recommend"
 export default {
     data(){
         return {
+            href:"details",
+            like:false,
             //当前第几页
             pageCount:0,
             //一共几页
@@ -412,6 +443,14 @@ export default {
         }
     },
     watch:{
+        products(val){
+            console.log(val.length)
+            if(val.length==0){
+                this.like=true;
+            }else{
+                this.like=false;
+            }
+        },
         //监听建造年代
         val_build:function(val){
             this.val_build=val; 
@@ -500,9 +539,9 @@ export default {
             //var params={address:"未央区",size:"50万-100万"};
             this.axios.get(url,{params:this.kw}
             ).then(result=>{
-            console.log(result);
+            // console.log(result);
             this.products=result.data.data;
-            console.log(this.products)
+            // console.log(this.products)
             //将得到的结果进行解构
             this.pageCount=result.data.pageCount;
             this.pno=result.data.pno;

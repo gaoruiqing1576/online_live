@@ -1,6 +1,7 @@
 <template>
     <div>
-        <map_surround />
+        <!--<map_surround />-->
+        <my-magnify />
     </div>
 </template>
 <script>

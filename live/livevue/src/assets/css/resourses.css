@@ -1,0 +1,264 @@
+*{
+	margin:0;padding:0;
+	box-sizing:border-box;
+	font-size:14px;
+}
+.g-main{
+    width:1903px;
+    color:#101d37;
+    margin:0 auto;
+}
+.m-jumbotron{
+    width:1903px;
+    height: 134px;
+	padding-top:20px;
+	padding-bottom:50px;
+    text-align: center;
+    background-color: #f5f5f6;
+}
+.m-jumbotron .title{
+    font-weight:700;
+    color:#101d37;
+    font-size:33px;
+}
+.m-jumbotron .subtitle{
+    margin-top:15px;
+    color:#878787;
+    font-size:16px;
+}
+.g-main .m-form{
+    width:990px;
+    height:555px;
+    margin:0 auto;
+    margin-top:55px;
+}
+.g-main .m-form .form-box{
+    height:440px;
+}
+.g-main .m-form .form-box .box-l{
+    width:590px;
+    float:left;
+}
+.m-entry{
+    color: #9399a5;
+}
+.g-main .m-form .form-box .box-r{
+    width:340px;
+    height:395px;
+    float:right;
+}
+/* 小区所在城市 */
+.m-entry dl.compact{
+    padding:0px;
+    padding-bottom:25px;
+    line-height:1;
+	height:41px;
+}
+.m-entry dt{
+    float:left;
+    color:#101d37;
+    font-weight:700;
+    width:120px;
+}
+.m-entry .city-select{
+    width:270px;
+    display:block;
+    cursor:pointer;
+	overflow:hidden;
+}
+.m-entry dd>*{
+    float: left;
+}
+/* 小区 */
+.m-entry dl{
+    padding:12px 0;
+    line-height:40px;
+    border-bottom:1px solid #eee;
+	height:65.61px;
+}
+.u-sug{
+    position:relative;
+    width:100%;
+}
+.u-sug select{
+    width:100px;
+    height:40px;
+    margin:0px 10px;
+}
+.m-entry input.sugInput{
+    width:100%;
+}
+.m-entry input{
+    border:none;
+    height:40px;
+    line-height:20px;
+    padding:10px 0;
+}
+/*房屋地址*/
+.m-entry dd{
+    position:relative;
+    float:left;
+    width:470px;
+	height:40px;
+}
+.u-select.u-select-build{
+    padding: 0px 10px;
+	width:146px;
+	height:40px;
+}
+.u-select.u-select-build select{
+    width:100px;
+    height:40px;
+}
+.u-select:first-child{
+    margin-left: 0;
+}
+.u-select.u-select-build input{
+    border:1px solid #ddd;
+    width:100%;
+    height: 30px;
+    padding: 5px 0;
+    line-height: 25px;
+    background-color: transparent;
+}
+.m-entry input{
+    border: none;
+}
+/*期望售价*/
+.expect_price{
+	width:210px;
+}
+.m-entry .unit{
+	font-weight:700;
+	color:#101d37;
+}
+.m-entry .link-gujia{
+	float:right;
+	color:#009de8;
+	font-size:12px;
+	text-decoration:none;
+}
+/*称呼*/
+.user_name{
+	width:250px;
+}
+/*手机号码*/
+.user_mobile{
+	width:250px;
+}
+.verify_code{
+	width:170px;
+}
+.m-entry .btn-getcode-sms{
+    float:right;
+    width:145px;
+    line-height:38px;
+    text-align:center;
+    border:1px solid #ddd;
+    border-radius:1px;
+    cursor:pointer;
+    font-size:12px;
+    background-color:#fdfdfd;
+    color:#666;
+    height:38px;
+}
+
+/*right*/
+[data-component=dealCard]{
+    background-color:#f5f5f6;
+    box-shadow:0 3px 7px 0 rgba(0,0,0,.14);
+}
+[data-component=dealCard] .hd{
+    position:relative;
+    padding:22px 30px;
+    height:90px;
+    line-height:1;
+    color:#fff;
+    background-color:#101d37;
+}
+[data-component=dealCard] .hd .tit{
+    height:14px;
+}
+[data-component=dealCard] .hd .sub-tit{
+    margin-top:10px;
+    height:22px;
+}
+[data-component=dealCard] .hd .sub-tit .price{
+    font-weight:700;
+	font-size:24px;
+}
+/*detial*/
+[data-component=dealCard] .bd{
+    position:relative;
+    line-height:1;
+    padding:8px 28px 0;
+	list-style:none;
+}
+[data-component=dealCard] .bd li{
+	padding:20px 0;
+	position:relative;
+	border-bottom:1px solid #e6e6e6;
+}
+[data-component=dealCard] .bd .tit{
+	display:block;
+	color:#101d37;
+	font-weight:700;
+	line-height:20px;
+	text-decoration:none;
+}
+[data-component=dealCard] .bd .time{
+	margin-top:6px;
+	display:block;
+	color:#aaa;
+	font-size:12px;
+}
+[data-component=dealCard] .bd .num{
+	position:absolute;
+	right:0;
+	bottom:22px;
+	font-weight:700;
+	color:#e4393c;
+}
+[data-component=dealCard] .ft{
+	text-align:center;
+}
+[data-component=dealCard] .ft a{
+	font-size:12px;
+	line-height:60px;
+	color:#9399a5;
+	text-decoration:none;
+}
+/*发布*/
+.m-submit{
+	margin-top:60px;
+}
+.m-submit .wrap{
+	width:990px;
+	margin:0 auto;
+}
+.m-submit .btn-submit{
+	float:left;
+    margin:50px 0px 50px 400px;
+    width:190px;
+    line-height:55px;
+    font-size:18px;
+    color:#fff;
+    text-align:center;
+    border-radius:2px;
+    background-color:#3072f6;
+    cursor:pointer;
+}
+
+
+/*form.user_dep
+form.area
+form.address
+form.spec_one
+form.spec_two
+form.floor
+form.size
+form.time
+form.sprice
+form.landlord
+form.mobile
+*/

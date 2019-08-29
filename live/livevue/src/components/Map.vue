@@ -49,11 +49,12 @@ export default {
         map.addControl(new BMap.OverviewMapControl());    
         map.addControl(new BMap.MapTypeControl()); 
         // 创建地址解析器实例--找到房源所在小区
-        var myGeo = new BMap.Geocoder();
+       var myGeo = new BMap.Geocoder();
         // 将地址解析结果显示在地图上,并调整地图视野
-        myGeo.getPoint(this.search_address, function(point){
+         var map_1=myGeo.getPoint(this.search_address, function(point){
+            console.log(point)
             if (point) {
-                map.centerAndZoom(point, 16);
+                map.centerAndZoom(point, 17);
                 var myIcon = new BMap.Icon("img/background/2.gif", new BMap.Size(50,50));
                 var marker2 = new BMap.Marker(point,{icon:myIcon});  // 创建标注
                 map.addOverlay(marker2);              // 将标注添加到地图中
@@ -74,17 +75,16 @@ export default {
                 });
                 map.addOverlay(label);   
                 var local = new BMap.LocalSearch(point, {
-                    renderOptions: {map: map, panel: "r-result"}
+                    renderOptions: {map: map, panel: "r-result",autoViewport: true,  }
                 });
-                local.searchNearby("超市",point,1000);
+                local.searchNearby("公交站",point,1000);
                 local.disableFirstResultSelection(true)   //禁用自动选择第一个检索结果
             }else{
                 alert("您选择地址没有解析到结果!");
             }
         }, "西安市");
-       
-
-        
+        //根据查询的小区地址查询周边设施
+          //
     }
 }
 </script>

@@ -38,7 +38,8 @@
 		<!-- <span>分享此房源</span>	 -->
 		<div class="view">
 			<div class="descImg">
-					<img :src="pics[i].lg" class="imgBig">
+				<magnify />
+				<!--	<img :src="pics[i].lg" class="imgBig">
 					<div id="mask"  v-show="maskShow" :style="maskStyle"></div>
 					<div id="super-mask" class="position-absolute" @mouseover="toggle" @mouseout="toggle"
               @mousemove="maskMove" ></div>
@@ -59,7 +60,7 @@
 					<span class="next">
 						<img src="../../public/img/detail/right.png" :class="{disabled:rightDisabled}" @click="move(+1)" id="btnRight">
 					</span>
-				</div>
+				</div>-->
 				<div class="trueHouse">
 					<div class="true">
 						<a href="javascript:;">
@@ -534,6 +535,7 @@
 </template>
 <script>
 import recommend from "../components/Recommend"
+import magnify from "../components/Magnify"
 export default {
     data() {
         return {
@@ -678,7 +680,7 @@ methods:{
 destroyed () {//离开该页面需要移除这个监听的事件
   window.removeEventListener('scroll', this.handleScroll)
 },
-components:{recommend},
+components:{recommend,magnify},
 }
 </script>
 <style>

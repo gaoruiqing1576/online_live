@@ -6,10 +6,15 @@ import axios from 'axios'
 import Map from './components/Map'
 import Footer from './components/Footer'
 import Header from './components/Header'
+import Magnify from './components/Magnify'
+
+
+
 
 Vue.component("map_surround",Map);
 Vue.component("my-footer",Footer);
 Vue.component("my-header",Header);
+Vue.component("my-magnify",Magnify);
 
 //将字体图标引入到当前项目中
 import "./font/iconfont.css"

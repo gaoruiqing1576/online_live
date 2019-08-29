@@ -8,6 +8,9 @@ p{
     margin-left:5px;
      font-size:14px;
 }
+div{
+    border:0
+}
 .nav_map{
     width:360px;
     position: relative;
